@@ -8,20 +8,20 @@ $replace = rand(0, $total);
 
 for ($i=1; $i<=$total; $i++) {
     
-    $book = new Book();
+    $book = new Mitsubachi\BookShelf\Book();
     
     if ($i === $replace) {
         $book->setIsbn('ISBN000-0-0000-0000-0');
     } else {
-        $book->setIsbn(Faker::isbn());
+        $book->setIsbn(Mitsubachi\BookShelf\Faker::isbn());
     }
     
-    $book->setTitle(Faker::title());
-    $book->setAuthor(Faker::author());
+    $book->setTitle(Mitsubachi\BookShelf\Faker::title());
+    $book->setAuthor(Mitsubachi\BookShelf\Faker::author());
     $books[] = $book;
 }
 
-$shelf = new BookShelf($books);
+$shelf = new Mitsubachi\BookShelf\BookShelf($books);
 
 $book1 = $shelf->search(['isbn' => 'ISBN000-0-0000-0000-0']);
 var_dump($book1);
