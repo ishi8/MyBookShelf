@@ -11,7 +11,7 @@ for ($i=1; $i<=$total; $i++) {
     $book = new Mitsubachi\BookShelf\Book();
     
     if ($i === $replace) {
-        $book->setIsbn('ISBN000-0-0000-0000-0');
+        $book->setIsbn('ISBN000-0-0000-0000-0');//これはなんのため…？
     } else {
         $book->setIsbn(Mitsubachi\BookShelf\Faker::isbn());
     }
