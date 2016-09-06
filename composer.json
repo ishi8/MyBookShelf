@@ -1,0 +1,15 @@
+{
+    "name": "binthec/bookshelf",
+    "authors": [
+        {
+            "name": "binthec",
+            "email": "binthec@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mitsubachi\\BookShelf\\": "Mitsubachi/BookShelf/"
+        }
+    },
+    "require": {}
+}
