@@ -2,58 +2,58 @@
 
 namespace App;
 
-
 class Book
 {
-    /**
-     * ISBN
-     *
-     * @var string
-     */
-    protected $isbn;
 
-    /**
-     * タイトル
-     *
-     * @var string
-     */
-    protected $title;
+	/**
+	 * ISBN
+	 *
+	 * @var string
+	 */
+	public $isbn;
 
-    /**
-     * 著者
-     *
-     * @var string
-     */
-    protected $author;
+	/**
+	 * タイトル
+	 *
+	 * @var string
+	 */
+	public $title;
 
-    /**
-     * ISBNをセットする
-     *
-     * @param string $isbn
-     */
-    public function setIsbn($isbn)
-    {
-        $this->isbn = $isbn;
-    }
+	/**
+	 * 著者
+	 *
+	 * @var string
+	 */
+	public $author;
 
-    /**
-     * タイトルをセットする
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-    }
+	/**
+	 * ISBNをセットする
+	 *
+	 * @param string $isbn
+	 */
+	public function setIsbn($isbn)
+	{
+		$this->isbn = $isbn;
+	}
 
-    /**
-     * 著者をセットする
-     *
-     * @param string $author
-     */
-    public function setAuthor($author)
-    {
-        $this->author = $author;
-    }
+	/**
+	 * タイトルをセットする
+	 *
+	 * @param string $title
+	 */
+	public function setTitle($title)
+	{
+		$this->title = $title;
+	}
+
+	/**
+	 * 著者をセットする
+	 *
+	 * @param string $author
+	 */
+	public function setAuthor($author)
+	{
+		$this->author = $author;
+	}
 
 }
