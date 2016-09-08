@@ -2,13 +2,15 @@
 
 namespace App;
 
+use App\Connector\FilesConnector;
+
 class PetBookShelf extends BookShelf
 {
 
 	public function save()
 	{
-		$recoder = new Recoder($this->books, 'file'); //ファイル出力
-		$recoder->exe();
+		$recorder = new Recorder($this->books, new FilesConnector('PetBook')); //ファイル出力
+		$recorder->exe();
 	}
 
 }
